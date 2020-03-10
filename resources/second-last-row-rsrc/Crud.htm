@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/12%3E%20Crud.html -->
+<html lang="en" style="background-color: white; transition: background-color 0.15s ease 0s;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="./Crud_files/bootstrap.css">
+    <title>Crud</title>
+    <style>
+        input {
+            border: 2px solid black !important;
+        }
+    </style>
+    <script>
+        var item = [
+
+            {
+                "name": "apple",
+                "price": 50,
+                "qty": 5
+            },
+
+            {
+                "name": "banana",
+                "price": 24,
+                "qty": 4
+            },
+
+            {
+                "name": "mango",
+                "price": 75,
+                "qty": 10
+            }
+
+        ];
+
+        function getitem() {
+            var data = "";
+            for (var i = 0; i < item.length; i++) {
+                data = data + "<tr>";
+                data = data + "<td>" + item[i].name + "</td>";
+                data = data + "<td>" + item[i].price + "</td>";
+                data = data + "<td>" + item[i].qty + "</td>";
+                data = data + "<td><button class='btn btn-danger' onclick='del(" + i + ")'>delete</button></td>";
+                data = data + "</tr>";
+                // instead of updating "data" variable multiple times, we can also add the entire html(row creation code) in single time, But for the sake of better legibility and understanding of the code we're updating he data variable multiple time, and hence adding the row creation html code, in steps
+                //"OnClick" Event is getting fired, When the delete button is clicked, And the controll is going at the EventHandler function del();
+            }
+            document.getElementById("itemlist").innerHTML = data;
+        }
+
+        function saveitem() {
+            var newitem = {
+                "name": document.getElementById("a").value,
+                "price": document.getElementById("b").value,
+                "qty": document.getElementById("c").value
+            };
+            item = item.concat(newitem);
+            // Here newitem is not a normal varaible it is an object
+            //The concat() method is used to join two or more arrays, or objects if the array is object typed // as in this case
+            getitem(); // to reload the list
+            document.getElementById("a").value = "";
+            document.getElementById("b").value = "";
+            document.getElementById("c").value = "";
+            // When array (object typed), Updated (with new object on save), We are clearing up the values which the input elements are holding, by giving them value of "" [empty values]
+        }
+
+        function del1() {
+            item.shift();
+            // The shift() method removes the first item of an array
+            getitem(); // to reload the list
+        }
+
+        function del2() {
+            item.pop();
+            // The pop() method removes the last element of an array
+            getitem(); // to reload the list
+        }
+
+        function del(index) {
+            item.splice(index, 1);
+            // The splice() method adds/removes items to/from an array
+            // Not explaining the working
+            // index represetn th indexing at what position you want to add/remove, in this case indexing coming from loop i=0,1,2 | and hence objects as rows of tables are getting removed
+            // 1 reprents how many items we need to remove as thre is just one item , 1 object as per iteration we're that will get removed
+            // AGain have a look at how this method is working ?
+            getitem(); // to reload the list
+        }
+    </script>
+</head>
+
+<body onload="getitem();" cz-shortcut-listen="true">
+    <!-- "Onload" Event is getting fired on loadup of the page, And the controll is going at the EventHandler function getitem(); -->
+    <br><br>
+    <div class="container">
+        <div class="row form-group">
+            <div class="col-md-3">
+                <i>Item Name</i>
+                <input type="text" class="form-control" id="a">
+            </div>
+            <div class="col-md-3">
+                <i>Item Price</i>
+                <input type="number" class="form-control" id="b">
+            </div>
+            <div class="col-md-3">
+                <i>Item Quantity</i>
+                <input type="number" class="form-control" id="c">
+            </div>
+            <div class="col-md-3">
+                <i>&nbsp;</i>
+                <button class="btn btn-dark btn-block" onclick="saveitem();"><b>Save</b></button>
+                <!-- "OnClick" Event is getting fired, When the save button is clicked, And the controll is going at the EventHandler function saveitem(); -->
+            </div>
+        </div><br>
+        <!--row closes-->
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <h2 class="text-center">List of items</h2>
+                <button class="btn btn-dark" onclick="del1();">Delete 1st item</button>
+                <!-- "OnClick" Event is getting fired, When the "Delete 1st" button is clicked, And the controll is going at the EventHandler function del1(); -->
+                <button class="btn btn-dark" onclick="del2();">Delete Last item</button>
+                <!-- "OnClick" Event is getting fired, When the "Delete last item" button is clicked, And the controll is going at the EventHandler function del2(); -->
+                <br><br>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Iteam Name</th>
+                            <th>Iteam Price</th>
+                            <th>Iteam Quantity</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="itemlist"><tr><td>banana</td><td>24</td><td>4</td><td><button class="btn btn-danger" onclick="del(0)">delete</button></td></tr></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body><screen-shader style="display: block; transition: none 0s ease 0s; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 1;"><!--This is an element that contains all the html for the screen shader extension to work--><div style="display: block; transition: none 0s ease 0s; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 0; position: fixed; top: -10%; right: -10%; bottom: -10%; left: -10%; width: auto; height: auto; z-index: 2147483646; background: black;"></div><div style="display: block; transition: none 0s ease 0s; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 1; position: fixed; top: -10%; right: -10%; bottom: -10%; left: -10%; width: auto; height: auto; z-index: 2147483645; background: rgba(255, 147, 41, 0.25); mix-blend-mode: multiply;"></div><style>screen-shader{pointer-events: none !important;}</style><style></style>
+<!-- saved from url=(0039)http://127.0.0.1:5500/12%3E%20Crud.html -->
+<html style="display: block; transition: none 0s ease 0s; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 1; position: fixed; top: -10%; right: -10%; bottom: -10%; left: -10%; width: auto; height: auto; z-index: -2147483647;"></html><div style="display: block; transition: none 0s ease 0s; margin: 0px; padding: 0px; border-radius: 0px; border: none; outline: none; visibility: visible; max-height: none; max-width: none; clip: unset; overflow: visible; opacity: 1; position: fixed; top: -10%; right: -10%; bottom: -10%; left: -10%; width: auto; height: auto; z-index: -2147483646; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div></screen-shader></html>

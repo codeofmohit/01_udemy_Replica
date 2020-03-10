@@ -1,0 +1,948 @@
+<html>
+
+<head>
+    <link rel="icon" type="image/png" href="resources/header-bar_rsrc/favicon.png">
+    <title>Online Courses - Learn Anything, On Your Schedule | Udemy</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="dist/css/font-awesome.css">
+    <link rel="stylesheet" href="udemyRTR.css">
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ae9d1f066e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row header-bar text-center">
+
+            <div class="logo-container">
+                <a href="#">
+                    <img src="resources/header-bar_rsrc/logo-coral.svg" alt="logo-image" width="110px" height="32px">
+                </a>
+            </div>
+            <!--logo-container closes-->
+
+            <div class="headerbar-left">
+                <div class="cat-container container-h">
+                    <i class="glyphicon glyphicon-menu-hamburger"></i> Categories
+                </div>
+                <div class="searchbox-container input-group">
+                    <input type="text" class="searchbox" placeholder="Search for anything">
+                    <button class="searchbtn input-group-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+            </div>
+            <!--header-left closes-->
+
+            <div class="headerbar-right">
+                <div class="udemy-forb container-h">Udemy for Business</div>
+                <div class="ton-udemy container-h">Teach on Udemy</div>
+                <div class="line-divider ldivider">
+                    <img src="resources/header-bar_rsrc/seprator.png" alt="divider">
+                </div>
+                <button class="cart">
+                    <i class="glyphicon glyphicon-shopping-cart"></i>
+                </button>
+                <button class="loginbtn ls" data-toggle="modal" data-target="#login-modal">Log in</button>
+                <button class="signupbtn ls" data-toggle="modal" data-target="#signup-modal">Sign Up</button>
+            </div>
+            <!--header-right closes-->
+
+        </div>
+
+        <!-- ###################
+            1> header-bar closes
+        ################### -->
+
+        <div class="row hero-area">
+
+            <div class="hero-header hero">
+                <div class="header-text htext">
+                    <span>Learn on your schedule</span>
+                </div>
+                <div class="header-desc htext">
+                    <span>Study any topic, anytime. Choose from thousands of <br> expert-led courses now.</span>
+                </div>
+                <div class="header-search input-group">
+                    <input type="text" class="searchbox" placeholder="What do you want to learn?">
+                    <button class="searchbtn input-group-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+            </div>
+            <!--hero-header closes-->
+
+            <div class="hero-footer hero">
+                <div class="row">
+                    <div class="col-md-4 block1 block">
+                        <div class="row">
+                            <div class="col-md-3 text-right">
+                                <img src="resources/hero-area_rsrc/icon1.png" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <span class="block_text-head">100,000 online courses</span><br>
+                                <span class="block_text-desc"> Explore a variety of fresh topics</span>
+                            </div>
+                        </div>
+                        <!--row closes-->
+                    </div>
+                    <div class="col-md-4 block1 block">
+                        <div class="row">
+                            <div class="col-md-3 text-right">
+                                <img src="resources/hero-area_rsrc/icon2.png" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <span class="block_text-head">Expert instruction</span><br>
+                                <span class="block_text-desc">Find the right instructor for you</span>
+                            </div>
+                        </div>
+                        <!--row closes-->
+                    </div>
+                    <div class="col-md-4 block1 block">
+                        <div class="row">
+                            <div class="col-md-3 text-right">
+                                <img src="resources/hero-area_rsrc/icon3.png" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <span class="block_text-head">Lifetime access</span><br>
+                                <span class="block_text-desc">Learm on your schedule</span>
+                            </div>
+                        </div>
+                        <!--row closes-->
+                    </div>
+                </div>
+                <!--row closes-->
+            </div>
+            <!--hero-footer closes-->
+
+        </div>
+
+        <!-- ###################
+            2> hero-area closes
+        ################### -->
+
+        <div class="row course-category">
+
+            <div class="col-md-4 left-desc-block">
+                <span class="left-block-head-text">The world's largets selection of courses</span><br>
+                <span class="left-block-desc-text">Choose from over 100,000 online video courses <br> with new additions published every month</span>
+            </div>
+            <!--left-desc-block closes-->
+
+            <div class="col-md-8 course-cat-container">
+                <div class="category-bar">
+                    <ul type='none'>
+                        <li class="firstcat"><span class="underline"></span><a href="#">Business</a></li>
+                        <li class="sec-color"><a href="#">Design</a></li>
+                        <li class="third-color"><a href="#">Photography</a></li>
+                        <li class="fourth-color"><a href="#">Devlopment</a></li>
+                        <li class="fifth-color"><a href="#">Markeing</a></li>
+                        <li class="sixth-color"><a href="#">IT & Software</a></li>
+                        <li class="seventh-color"><a href="#">Personal Development</a></li>
+                        <hr>
+                    </ul>
+                </div>
+                <!--category bar closes-->
+                <div class="course-blocks">
+                    <div class="row">
+                        <div class="col-md-4 course-block-1 cblock">
+                            <div class="blockholder">
+                                <div class="image-holder">
+                                    <div class="blacktrans"></div>
+                                </div>
+                                <div class="rest-con-holder">
+                                    <span class="course-header">The Business Intel <br> Analyst Course 2020</span>
+                                    <span class="course-tutor">Cris Hoft</span>
+                                    <span class="course-rating">
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span>
+                                    <span class="course-price">
+                                        <span class="line-th">
+                                            <i class="fa fa-inr"></i>6720
+                                        </span>
+                                    <span class="new-price">
+                                            <i class="fa fa-inr"></i>420
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--block 1 closes-->
+                        <div class="col-md-4 course-block-2 cblock">
+                            <div class="blockholder">
+                                <div class="image-holder block2img">
+                                    <div class="blacktrans"></div>
+                                </div>
+                                <div class="rest-con-holder">
+                                    <span class="course-header">Sales Training <br> Practical Techniques</span>
+                                    <span class="course-tutor">Amy br</span>
+                                    <span class="course-rating">
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span>
+                                    <span class="course-price">
+                                        <span class="line-th">
+                                            <i class="fa fa-inr"></i>6720
+                                        </span>
+                                    <span class="new-price">
+                                            <i class="fa fa-inr"></i>420
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--block 2 closes-->
+                        <div class="col-md-4 course-block-3 cblock">
+                            <div class="blockholder">
+                                <div class="image-holder block3img">
+                                    <div class="blacktrans"></div>
+                                </div>
+                                <div class="rest-con-holder">
+                                    <span class="course-header">The Planning Stat <br> & Planning Pro</span>
+                                    <span class="course-tutor">M. Don</span>
+                                    <span class="course-rating">
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span>
+                                    <span class="course-price">
+                                        <span class="line-th">
+                                            <i class="fa fa-inr"></i>6720
+                                        </span>
+                                    <span class="new-price">
+                                            <i class="fa fa-inr"></i>420
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--block 3 closes-->
+                        <div class="col-md-4 course-block-4 cblock">
+                            <div class="blockholder">
+                                <div class="image-holder block4img">
+                                    <div class="blacktrans"></div>
+                                </div>
+                                <div class="rest-con-holder">
+                                    <span class="course-header">Productivity 2020<br> MasterClass Experts</span>
+                                    <span class="course-tutor">Ronny</span>
+                                    <span class="course-rating">
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                    </span>
+                                    <span class="course-price">
+                                        <span class="line-th">
+                                            <i class="fa fa-inr"></i>6720
+                                        </span>
+                                    <span class="new-price">
+                                            <i class="fa fa-inr"></i>420
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--block 4 closes-->
+                    </div>
+                </div>
+                <!--course blocks closes-->
+            </div>
+            <!--category-container closes-->
+
+        </div>
+
+        <!-- ##########################
+            3> course-category closes
+        ############################ -->
+
+        <div class="row fourth-row">
+            <div class="col-md-4 fourth-row-block1">
+                <div class="fr-block-con fr-block-con1">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="resources/fourth-row_rsrc/icon_e1.png" alt="icon image">
+                        </div>
+                        <div class="col-md-10">
+                            <span class="left-block-head-text">Go at your own pace</span> <br>
+                            <span class="left-block-desc-text">Enjoy lifetime access to courses <br> on Udemy’s website and app</span>
+                        </div>
+                    </div>
+                    <!--row closes-->
+                </div>
+            </div>
+            <div class="col-md-4 fourth-row-block2">
+                <div class="fr-block-con fr-block-con2">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="resources/fourth-row_rsrc/icon_e2.png" alt="icon image">
+                        </div>
+                        <div class="col-md-10">
+                            <span class="left-block-head-text">Learn from experts</span> <br>
+                            <span class="left-block-desc-text">Select from top instructors <br> around the world</span>
+                        </div>
+                    </div>
+                    <!--row closes-->
+                </div>
+            </div>
+            <div class="col-md-4 fourth-row-block3">
+                <div class="fr-block-con fr-block-con3">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="resources/fourth-row_rsrc/icon_e3.png" alt="icon image">
+                        </div>
+                        <div class="col-md-10">
+                            <span class="left-block-head-text">Video courses for any topic</span> <br>
+                            <span class="left-block-desc-text">Build your career and <br> personal growth</span>
+                        </div>
+                    </div>
+                    <!--row closes-->
+                </div>
+            </div>
+        </div>
+
+        <!-- ##########################
+            4> fourth-row closes
+        ############################ -->
+
+        <div class="row students-viewing">
+            <div class="row">
+                <div class="col-md-12 s-v-h">Students are viewing</div>
+            </div>
+            <!--row closes-->
+            <div class="row hori-scroll">
+                <div class="col-md-1 course-block-2 cblock">
+                    <div class="blockholder">
+                        <div class="image-holder block-sv-img-1">
+                            <div class="blacktrans"></div>
+                        </div>
+                        <div class="rest-con-holder">
+                            <span class="course-header">Sales Training <br> Practical Techniques</span>
+                            <span class="course-tutor">Amy br</span>
+                            <span class="course-rating">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                            </span>
+                            <span class="course-price">
+                                <span class="line-th">
+                                    <i class="fa fa-inr"></i>6720
+                                </span>
+                            <span class="new-price">
+                                    <i class="fa fa-inr"></i>420
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--block 1 closes-->
+                <div class="col-md-1 course-block-1 cblock block-ml">
+                    <div class="blockholder">
+                        <div class="image-holder block-sv-img-2">
+                            <div class="blacktrans"></div>
+                        </div>
+                        <div class="rest-con-holder">
+                            <span class="course-header">The Business Intel <br> Analyst Course 2020</span>
+                            <span class="course-tutor">Cris Hoft</span>
+                            <span class="course-rating">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                            </span>
+                            <span class="course-price">
+                                <span class="line-th">
+                                    <i class="fa fa-inr"></i>6720
+                                </span>
+                            <span class="new-price">
+                                    <i class="fa fa-inr"></i>420
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--block 2 closes-->
+                <div class="col-md-1 course-block-3 cblock block-ml">
+                    <div class="blockholder">
+                        <div class="image-holder block-sv-img-3">
+                            <div class="blacktrans"></div>
+                        </div>
+                        <div class="rest-con-holder">
+                            <span class="course-header">The Planning Stat <br> & Planning Pro</span>
+                            <span class="course-tutor">M. Don</span>
+                            <span class="course-rating">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                            </span>
+                            <span class="course-price">
+                                <span class="line-th">
+                                    <i class="fa fa-inr"></i>6720
+                                </span>
+                            <span class="new-price">
+                                    <i class="fa fa-inr"></i>420
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--block 3 closes-->
+                <div class="col-md-1 course-block-4 cblock block-ml">
+                    <div class="blockholder">
+                        <div class="image-holder block-sv-img-4">
+                            <div class="blacktrans"></div>
+                        </div>
+                        <div class="rest-con-holder">
+                            <span class="course-header">Productivity 2020<br> MasterClass Experts</span>
+                            <span class="course-tutor">Ronny</span>
+                            <span class="course-rating">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                            </span>
+                            <span class="course-price">
+                                <span class="line-th">
+                                    <i class="fa fa-inr"></i>6720
+                                </span>
+                            <span class="new-price">
+                                    <i class="fa fa-inr"></i>420
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--block 4 closes-->
+                <div class="col-md-1 course-block-2 cblock block-ml">
+                    <div class="blockholder">
+                        <div class="image-holder block-sv-img-5">
+                            <div class="blacktrans"></div>
+                        </div>
+                        <div class="rest-con-holder">
+                            <span class="course-header">Sales Training <br> Practical Techniques</span>
+                            <span class="course-tutor">Amy br</span>
+                            <span class="course-rating">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                            </span>
+                            <span class="course-price">
+                                <span class="line-th">
+                                    <i class="fa fa-inr"></i>6720
+                                </span>
+                            <span class="new-price">
+                                    <i class="fa fa-inr"></i>420
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--block 5 closes-->
+                <div class="col-md-1 course-block-1 cblock block-ml">
+                    <div class="blockholder">
+                        <div class="image-holder block-sv-img-6">
+                            <div class="blacktrans"></div>
+                        </div>
+                        <div class="rest-con-holder">
+                            <span class="course-header">The Business Intel <br> Analyst Course 2020</span>
+                            <span class="course-tutor">Cris Hoft</span>
+                            <span class="course-rating">
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                                <i class="glyphicon glyphicon-star"></i>
+                            </span>
+                            <span class="course-price">
+                                <span class="line-th">
+                                    <i class="fa fa-inr"></i>6720
+                                </span>
+                            <span class="new-price">
+                                    <i class="fa fa-inr"></i>420
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--block 6 closes-->
+            </div>
+            <!--row closes-->
+        </div>
+
+        <!-- ############################
+            5> students-viewing closes
+        ############################## -->
+
+        <div class="row pers-reccom">
+            <div class="borderGrad"></div>
+            <div class="col-md-12 text-center pers-reccom-con">
+                <h3>Get personalized recommendations</h3>
+                <p class="mt">Answer a few questions for your top picks</p>
+                <button class="signupbtn ls">Get started</button>
+            </div>
+        </div>
+
+        <!-- ############################
+            6> pers-reccom closes
+        ############################## -->
+
+        <div class="row top-cat">
+            <div class="row">
+                <h3 class="top-cart-h3">Top categories</h3>
+                <div class="row top-cat-row1">
+                    <div class="col-md-3">
+                        <div class="top-cat-con">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                            <span>Devlopment</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="top-cat-con">
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                            <span>Business</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="top-cat-con">
+                            <i class="fa fa-television" aria-hidden="true"></i>
+                            <span>IT and Software</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="top-cat-con">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            <span>Design</span>
+                        </div>
+                    </div>
+                </div>
+                <!--row closes-->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="top-cat-con">
+                            <i class="fa fa-bullseye" aria-hidden="true"></i>
+                            <span>Marketing</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="top-cat-con">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            <span>Personal Devlopment</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="top-cat-con">
+                            <i class="fa fa-camera" aria-hidden="true"></i>
+                            <span>Photography</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="top-cat-con">
+                            <i class="fa fa-play" aria-hidden="true"></i>
+                            <span>Music</span>
+                        </div>
+                    </div>
+                </div>
+                <!--row closes-->
+            </div>
+        </div>
+
+        <!-- ####################
+            7> top-cat closes
+        ###################### -->
+
+        <div class="row testimo">
+            <h3 class="top-cart-h3">What our students have to say</h3>
+            <div class="col-md-4 rempadl">
+                <div class="test-con test1">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="test-img-holder">
+                                <img src="resources/test_rsrc/test1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <span class="left-block-head-text">Borivoje</span>
+                        </div>
+                    </div>
+                    <!--row closes-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="left-block-desc-text test-desc-text">
+                                Udemy is a life saver. My goal is to become a <br> freelance web developer, and thanks to <br> Udemy, I'm really close.
+                            </span>
+                        </div>
+                    </div>
+                    <!--row closes-->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="test-con test2">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="test-img-holder">
+                                <img src="resources/test_rsrc/test2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <span class="left-block-head-text">Dipesh</span>
+                        </div>
+                    </div>
+                    <!--row closes-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="left-block-desc-text test-desc-text">
+                                I believe in lifelong learning and Udemy is a great<br> place to learn from experts. I've learned a lot and<br> recommend it to all my friends.
+                            </span>
+                        </div>
+                    </div>
+                    <!--row closes-->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="test-con test3">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="test-img-holder">
+                                <img src="resources/test_rsrc/test3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <span class="left-block-head-text">Kathy</span>
+                        </div>
+                    </div>
+                    <!--row closes-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="left-block-desc-text test-desc-text">
+                            My children and I LOVE Udemy! The courses are<br> fantastic and the instructors are so fun and <br> knowledgeable. I only wish we found it sooner.
+                           </span>
+                        </div>
+                    </div>
+                    <!--row closes-->
+                </div>
+            </div>
+        </div>
+
+        <!-- ####################
+            8> testimo closes
+        ###################### -->
+
+        <div class="second-lat-row row">
+            <div class="comp-logo-display row">
+                <div class="col-md-12 text-center">
+                    <span>Trusted by companies of all sizes</span>
+                </div>
+                <div class="row logo-display-list">
+                    <ul type='none'>
+                        <li>
+                            <a href="#">
+                                <div class="comp-logo-con">
+                                    <img src="resources/second-last-row-rsrc/booking-logo.svg" alt="Booking.cm logo">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="comp-logo-con">
+                                    <img src="resources/second-last-row-rsrc/volkswagen-logo.svg" alt="Booking.cm logo">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="comp-logo-con">
+                                    <img src="resources/second-last-row-rsrc/mercedes-logo.svg" alt="Booking.cm logo">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="comp-logo-con">
+                                    <img src="resources/second-last-row-rsrc/adidas-logo.svg" alt="Booking.cm logo">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="comp-logo-con">
+                                    <img src="resources/second-last-row-rsrc/pinterest-logo.svg" alt="Booking.cm logo">
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="comp-logo-con">
+                                    <img src="resources/second-last-row-rsrc/eventbrite-logo.svg" alt="Booking.cm logo">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--row closes-->
+            </div>
+            <!--row closes-->
+            <div class="two-blocks row">
+                <div class="col-md-6 two-blocks01 text-center block_two-block">
+                    <span class="left-block-head-text bai">Become an instructor</span><br>
+                    <span class="left-block-desc-text">
+                        Top instructors from around the world teach millions <br> of students on Udemy. We provide the tools and <br> skills to teach what you love.
+                    </span><br>
+                    <button class="signupbtn ls start-teaching-btn">Start teaching today</button>
+                </div>
+                <div class="col-md-6 two-blocks02 text-center block_two-block">
+                    <span class="left-block-head-text bai">Udemy for Business</span><br>
+                    <span class="left-block-desc-text">
+                        Get unlimited access to 3,500+ of Udemy’s top <br> courses for your team. Once downloaded <br> comes with lifetime access. 
+                    </span><br>
+                    <button class="signupbtn ls start-teaching-btn">Get Udemy for Business</button>
+                </div>
+            </div>
+            <!--row closes-->
+        </div>
+
+        <!-- ##########################
+            9> second-hand-row closes
+        ############################ -->
+
+        <div class="row footer">
+            <div class="row footer-top">
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Udemy app</a></li>
+                        <li><a href="#">Teach on udemy</a></li>
+                        <li><a href="#">Udemy for business</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Help and support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Featured courses</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-center">
+                    <button>
+                        <i class="glyphicon glyphicon-globe"></i>
+                        <span>English</span> 
+                    </button>
+                </div>
+            </div>
+            <!--row closes-->
+            <div class="row footer-bottom">
+                <div class="row">
+                    <hr>
+                </div>
+                <!--row closes-->
+                <div class="row footer-bottom-content">
+                    <div class="col-md-12">
+                        <div class="col-md-1">
+                            <div class="logobottom-container">
+                                <img src="resources/header-bar_rsrc/logo-coral.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-2 text-right">
+                            <span>
+                                <a href="" class="copy">Copyright © 2020 Udemy, Inc.</a>
+                            </span>
+                        </div>
+                        <div class="col-md-9 text-right">
+                            <span>
+                                <a href="">Terms</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </span>
+                            <span>
+                                <a href="">Privacy Policy and Cookie Policy</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--row closes-->
+                <div class="row">
+                    <div class="lastline"></div>
+                </div>
+                <!--row closes-->
+            </div>
+            <!--row closes-->
+        </div>
+
+        <!-- ####################
+            10> footer closes
+        ###################### -->
+
+    </div>
+    <!--container-fluid closes-->
+
+    <!-- Following will be defining the modal-->
+
+    <div class="modal fade" id="login-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <span class="left-block-head-text login-mh-text">Log In to Your Udemy Account!</span>
+                            <button class="close timescustom" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <button class="custom-api-btn-fb custom-api-btn btn-block">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-square" aria-hidden="true"></i> &nbsp;
+                                        <span class="facebook-login-text"> Continue with Facebook</span>
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <button class="custom-api-btn-google custom-api-btn btn-block">
+                                    <a href="#">
+                                        <i class="fab fa-google"></i> &nbsp;
+                                        <span class="facebook-login-text"> Continue with Google</span>
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <button class="signupbtn ls btn-block">Log In</button>
+                            </div>
+                            <div class="text-center">
+                                <span>Or</span>&nbsp;
+                                <span><a href="#" data-toggle="modal" data-target="#Forget-password-modal" data-dismiss="modal">Forget Password</a></span>
+                            </div>
+                            <div class="text-center custonmargin-signup">
+                                <span>Don't have an account?</span>&nbsp;
+                                <span><a href="#" data-toggle="modal" data-target="#signup-modal" data-dismiss="modal">Sign up</a></span>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--login modal closes here-->
+
+    <div class="modal fade" id="Forget-password-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <h4>Foget Password
+                                <button class="close timescustom" data-dismiss="modal">&times;</button>
+                            </h4>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <input type="email" placeholder="Enter your registered email for resetting the password!" class="form-control" style="height: 50px; border-radius: 2px;">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn signupbtn ls">Reset passowrd</button>&nbsp; Or&nbsp;
+                                <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#login-modal">Log In</a>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Forget-password-modal closes here-->
+
+    <div class="modal fade" id="signup-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <h4>Sign Up and Start Learnig!
+                                <button class="close" data-dismiss="modal">&times;</button>
+                            </h4>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-body" style="padding-bottom: 0px;">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <input type="name" placeholder="Full Name" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Password" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-block signupbtn ls">Sign Up</button>
+                            </div>
+                            <div class="text-center">
+                                <span style="font-size: 10px;">By signing up, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy.</a></span>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+                <div class="modal-footer" style="margin-top: 16px;">
+                    <div class="text-center">
+                        Already have an account? <a href="#" data-toggle="modal" data-target="#login-modal" data-dismiss="modal">Log In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--signup-modal closes here-->
+
+</body>
+<!--body closes-->
+
+
+</html>

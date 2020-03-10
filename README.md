@@ -1,7 +1,7 @@
 # Project type : 
 Self assigned passion project 
 # Skills tested : 
-html + css
+html + css + bootStrap
 # Time taken : 
 7 hrs
 # html code :

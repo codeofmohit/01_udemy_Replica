@@ -1,7 +1,7 @@
 # Project type : 
 Self assigned passion project | Very good practice of core css + bootstrap | wanted to create something complicated as my first design project, Hence decided to replicate [udemy.com](https://www.udemy.com)
 
-Learning Outcomes:
+**Learning Outcomes:**
 * Real time development problems & How to resolve them
 * Importance of proper planning for efficient Front end development
 * How to utilise Grid Systems [here i used bootStrap 4, but the learning applies to all other types of layout structuring systems also] for quickly set up the website flow

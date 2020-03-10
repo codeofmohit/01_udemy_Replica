@@ -1,1 +1,10 @@
-This is a passion project, wanted to test my design skills and the time i take to design a complex website, hence decided to replicate the official website of udemy, (i.e udemy.com). It took around 6 hrs for me to replicate the exact design of "udemy.com" using simple html & css. In the upcoming version of this project i will be adding custom interactivity into the design.
+# Project type : 
+Self assigned passion project 
+# Skills tested : 
+html + css
+# Time taken : 
+7 hrs
+# html code :
+949 lines
+# css code :
+870 lines

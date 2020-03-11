@@ -1,4 +1,4 @@
-# Project type : 
+# Project description : 
 Self assigned passion project | Very good practice of core css + bootstrap | wanted to create something complicated as my first design project, Hence decided to replicate [udemy.com](https://www.udemy.com)
 
 **Learning Outcomes:**
